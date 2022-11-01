@@ -11,7 +11,7 @@ if (any(installed_packages == FALSE)) {
 # Packages loading
 invisible(lapply(packages, library, character.only = TRUE))
 
-setwd("F:/Brian/Maestria_KFU")
+setwd("F:/your_directory_here/")
 
 points<-read_csv("ru.csv") %>% select(city,lat,lng) #upload our file to R and select 3 columns
 cities<-points[1:12,] #here we take the first 12 rows
